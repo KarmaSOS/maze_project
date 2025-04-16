@@ -1,4 +1,4 @@
-import GridViewer
+import Viewer
 
 
 EMPTY = 0
@@ -15,15 +15,15 @@ WEST = 'w'
 if __name__ == "__main__":
     grid = [
         [ WALL,  WALL,  WALL,  WALL,  WALL,  WALL,  WALL,  WALL,  WALL, WALL],
-        [START, EMPTY,  WALL,  WALL, EMPTY, EMPTY, EMPTY, EMPTY,  WALL, WALL],
-        [ WALL, EMPTY, EMPTY, EMPTY, EMPTY, EMPTY,  WALL, EMPTY,  WALL, WALL],
+        [START, EMPTY, EMPTY, EMPTY, EMPTY, EMPTY, EMPTY, EMPTY,  WALL, WALL],
+        [ WALL, EMPTY, EMPTY, EMPTY, EMPTY, EMPTY, EMPTY, EMPTY,  WALL, WALL],
         [ WALL,  WALL,  WALL,  WALL, EMPTY,  WALL, EMPTY,  WALL, EMPTY, WALL],
         [ WALL, EMPTY, EMPTY, EMPTY, EMPTY,  WALL, EMPTY, EMPTY, EMPTY, WALL],
         [ WALL,  WALL, EMPTY,  WALL,  WALL, EMPTY, EMPTY,  WALL, EMPTY, WALL],
         [ WALL,  WALL, EMPTY, EMPTY, EMPTY, EMPTY,  WALL,  WALL, EMPTY,  END],
         [ WALL,  WALL,  WALL,  WALL,  WALL,  WALL,  WALL,  WALL,  WALL, WALL],
     ]
-    GridViewer.view(grid)               
+    Viewer.view(grid)               
     #for i in range(len(grid)):
     #    for j in range(len(grid[i])):
     #        
@@ -110,7 +110,7 @@ if __name__ == "__main__":
     if not solved:
         print("MESSAGE 5") # Did not reach the end.
 
-    GridViewer.view(grid)
+    Viewer.view(grid)
     #for i in range(len(grid)):
     #    for j in range(len(grid[i])):
     #        
