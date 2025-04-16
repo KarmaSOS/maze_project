@@ -1,5 +1,5 @@
-import GridViewer
-
+#import GridViewer
+import Viewer
 
 EMPTY = 0
 WALL = 1
@@ -23,7 +23,8 @@ if __name__ == "__main__":
         [ WALL,  WALL, EMPTY, EMPTY, EMPTY, EMPTY,  WALL,  WALL, EMPTY,  END],
         [ WALL,  WALL,  WALL,  WALL,  WALL,  WALL,  WALL,  WALL,  WALL, WALL],
     ]
-    GridViewer.view(grid)               
+    Viewer.view(grid) 
+    #GridViewer.view(grid)               
     #for i in range(len(grid)):
     #    for j in range(len(grid[i])):
     #        
@@ -109,8 +110,8 @@ if __name__ == "__main__":
 
     if not solved:
         print("MESSAGE 5") # Did not reach the end.
-
-    GridViewer.view(grid)
+    Viewer.view(grid) 
+    #GridViewer.view(grid)
     #for i in range(len(grid)):
     #    for j in range(len(grid[i])):
     #        
